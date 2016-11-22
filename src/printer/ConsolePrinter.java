@@ -6,11 +6,11 @@ import calendar.interfaces.Calendar;
 /**
  * Created by employee on 11/21/16.
  */
-public class ConsolePrinter implements Printer {
+public class ConsolePrinter extends Printer {
 
     @Override
     public void print() {
-        Calendar calendar = new ConsoleCalendar();
+        Calendar calendar = new ConsoleCalendar(getLocalDate(), getStartWeek(), weekends());
         calendar.print();
     }
 }

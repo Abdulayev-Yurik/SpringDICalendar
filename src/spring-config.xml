@@ -8,10 +8,24 @@
     </bean>
 
     <bean id="console" class="printer.ConsolePrinter">
-        <!--<property name="message" value="Hello World!"/>-->
+        <property name="localDate" value="2016-12-14"/>
+        <property name="startWeek" value="1"/>
+        <property name="weekend" >
+            <list>
+                <value>SUNDAY</value>
+                <value>SATURDAY</value>
+            </list>
+        </property>
     </bean>
 
     <bean id="html" class="printer.HtmlPrinter">
-        <!--<property name="message" value="Hello World!"/>-->
+        <property name="localDate" value="2016-12-14"/>
+        <property name="startWeek" value="1"/>
+        <property name="weekend" >
+            <list>
+                <value>SUNDAY</value>
+                <value>SATURDAY</value>
+            </list>
+        </property>
     </bean>
 </beans>
